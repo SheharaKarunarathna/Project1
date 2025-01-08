@@ -183,6 +183,13 @@ header.sticky{
     transform: scale(1.1) rotate(10deg);
     border-color: #3498db;
 }
+.video-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+    align-items:center;
+    text-align: center;
+    gap: 3rem;
+}
 
 /*footer*/
 footer {
