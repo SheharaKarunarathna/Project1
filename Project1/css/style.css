@@ -186,7 +186,7 @@ header.sticky{
 
 /*footer*/
 footer {
-    background-color: #f9f9f9;
+    background-color:seagreen;
     padding:20px;
     border-top: 1px solid #ddd;
 }
@@ -246,7 +246,7 @@ footer {
 }
 .payment-methods img,
 .social-links img {
-    height:24px;
+    height:32px;
     margin-right:10px;
 }
 .footer-bottom p {
