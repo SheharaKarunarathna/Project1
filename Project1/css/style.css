@@ -287,3 +287,31 @@ footer {
         height: 100%;
     }
 }
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px; /* Adjusts the space between images */
+}
+.image-container img {
+    width: 300px; /* Adjusts the width of the images */
+    height: 150px; /* Maintains the aspect ratio */
+}
+.image-container .image-box {
+        width: 23%; /* Adjusts the width of the box containing the image and caption */
+        text-align: center; /* Centers the caption under the image */
+}
+.caption-text {
+    font-size: 1.2em;
+    color: #fcfcfc;
+    padding: 10px;
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'serif';
+}
+.topic {
+    font-size: 3em; /* Large font size */
+    color: #b5b6b2; /* Dark text color */
+    text-align: center; /* Ensure the text is centered */
+}
