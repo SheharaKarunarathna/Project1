@@ -183,14 +183,32 @@ header.sticky{
     transform: scale(1.1) rotate(10deg);
     border-color: #3498db;
 }
-.video-container{
+/* Pop-section styling */
+/* Pop-section styling */
+/* Styling for video container - Always visible */
+
+.video-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,auto));
-    align-items:center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
     text-align: center;
     gap: 3rem;
 }
+/* Styling for individual videos */
+.VID {
+    border-radius: 15px; /* Adjust the radius as needed */
+    overflow: hidden; /* Ensures the video fits inside the rounded borders */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better aesthetics */
+}
 
+/* Styling for the video title */
+.video-title {
+    margin-top: 10px; /* Adds spacing between the video and the title */
+    font-size: 16px;
+    font-weight: bold;
+    color: antiquewhite;
+    font-family: cursive;
+}
 /*footer*/
 footer {
     background-color:rgb(149, 146, 146);
@@ -293,8 +311,8 @@ footer {
     gap: 5px; /* Adjusts the space between images */
 }
 .image-container img {
-    width: 300px; /* Adjusts the width of the images */
-    height: 150px; /* Maintains the aspect ratio */
+    width: 350px; /* Adjusts the width of the images */
+    height: 200px; /* Maintains the aspect ratio */
 }
 .image-container .image-box {
         width: 23%; /* Adjusts the width of the box containing the image and caption */

@@ -15,9 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-
-
-
 </head>
 
 <body>
@@ -93,32 +90,35 @@
         <br>
         <br>
         <br>
-    <section>
-        <h1 style="text-align: center;  transform: translateY(-50%);">One day Tours</h1>
+        <!-- Section with Videos -->
+    <div class="appear">
+        <h1 style="text-align: center; transform: translateY(-50%);">Some popular One day Tours</h1>
         <div class="video-container">
             <div class="video-item">
                 <a href="#">
-                    <video width="380" onmouseover="this.play()" onmouseout="this.pause()" muted loop
-                    onloadeddata="this.playbackRate = 1.6;" src="Videos/Sigiriya.mp4"></video>
-                </a>    
+                    <video class="VID" width="380" autoplay muted loop onloadeddata="this.playbackRate = 1.6;" src="Videos/Sigiriya.mp4"></video>
+                    <p class="video-title">Sigiriya Rock</p>
+                </a>
             </div>
             <div class="video-item">
                 <a href="#">
-                    <video width="380" onmouseover="this.play()" onmouseout="this.pause()" muted loop
-                    onloadeddata="this.playbackRate = 1;" src="Videos/Pinnawala.mp4"></video>
-                </a>    
+                    <video class="VID" width="380" autoplay muted loop onloadeddata="this.playbackRate = 1;" src="Videos/Pinnawala.mp4"></video>
+                    <p class="video-title">Pinnawala Elephant Orphanage</p>
+                </a>
             </div>
             <div class="video-item">
                 <a href="#">
-                    <video width="380" onmouseover="this.play()" onmouseout="this.pause()" muted loop
-                    onloadeddata="this.playbackRate = 2.3;" src="Videos/Ninearch.MP4"></video>
+                    <video class="VID" width="380" autoplay muted loop onloadeddata="this.playbackRate = 2.3;" src="Videos/Ninearch.MP4"></video>
+                    <p class="video-title">Ella Ninearch Bridge</p>
                 </a>
             </div>
         </div>
-    </section>
-    <section class="feature">
-    </section>
-
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!--customize the footer-->
     <footer>
         <div class="footer-container">
