@@ -183,10 +183,26 @@ header.sticky{
     transform: scale(1.1) rotate(10deg);
     border-color: #3498db;
 }
+.image-box {
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;    /* Ensure child respects rounding */
+    text-align: center;
+    background-color: #000; /* Optional background */
+}
+
+.image-box img {
+    border-radius: 15px; /* Same as parent */
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
 /* Pop-section styling */
 /* Pop-section styling */
 /* Styling for video container - Always visible */
-
+.videostopic{
+    color:burlywood;
+}
 .video-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
