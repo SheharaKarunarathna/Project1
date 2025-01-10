@@ -1,23 +1,36 @@
-// Sticky Header Functionality
 const header = document.querySelector("header");
-window.addEventListener("scroll", function () {
-    header.classList.toggle("sticky", this.window.scrollY > 60);
+window.addEventListener("scroll",function(){
+    header.classList.toggle("sticky",this.window.scrollY>60)
 });
 
-// Dynamic Content for About Us Section
-const aboutSection = document.getElementById('about-section');
-const aboutContent = `
-    <h2>About Us</h2>
-    <p>We are a team of 4 passionate members from <strong>University of Moratuwa</strong>, dedicated to making differences through technology and collaboration.</p>
-    <p>Our current project focuses on supporting the '<strong>Scope</strong>' community, aiming to create impactful solutions for real-world challenges.</p>
-    <p>With a shared vision and diverse skills, we strive to empower communities through innovation, teamwork, and creativity.</p> 
-`;
-aboutSection.innerHTML = aboutContent;
-const cultureSection = document.getElementById('culture-section');
-const cultureContent = `
-    <h2>About Us</h2>
-    <p>We are a team of 4 passionate members from <strong>University of Moratuwa</strong>, dedicated to making differences through technology and collaboration.</p>
-    <p>Our current project focuses on supporting the '<strong>Scope</strong>' community, aiming to create impactful solutions for real-world challenges.</p>
-    <p>With a shared vision and diverse skills, we strive to empower communities through innovation, teamwork, and creativity.</p> 
-`;
-cultureSection.innerHTML = cultureContent;
+// Handle form submission
+document.getElementById("subscribeForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent the page from reloading
+
+    const email = document.getElementById("subscriberEmail").value;
+
+    // Display a confirmation message to the user
+    const message = document.getElementById("subscribeMessage");
+    message.style.display = "block";
+    message.textContent = `Thank you for subscribing with ${email}!`;
+
+    // Notify you (email or console log)
+    console.log(`New subscription: ${email}`);
+
+    // Optional: Use EmailJS or backend for email notifications
+    sendEmailToAdmin(email);
+
+    // Clear the form input
+    document.getElementById("subscriberEmail").value = "";
+});
+
+// Optional: Function to send email notifications using EmailJS (requires setup)
+function sendEmailToAdmin(email) {
+    Email.send({
+        SecureToken: "YOUR_SECURE_TOKEN",
+        To: "nethinduchamikara344@gmail.com",
+        From: "notification@example.com",
+        Subject: "New Subscriber",
+        Body: `A new user has subscribed with the email: ${email}`,
+    }).then((message) => alert("Subscription notification sent to admin."));
+}
