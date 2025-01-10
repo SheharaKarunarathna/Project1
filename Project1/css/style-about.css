@@ -1,0 +1,24 @@
+/*styling the About us page*/
+.about-us, .team, .mission{
+    margin: 2rem auto;
+    max-width: 1000px;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team-conntainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: wrap;
+}
+
+.team-member img{
+    width: 50px;
+    height:50px;
+    border: 3px solid #ffa500;
+    border-radius: 50%;
+}
