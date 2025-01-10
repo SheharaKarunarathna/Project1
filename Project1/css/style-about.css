@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.team-conntainer {
+.team-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
