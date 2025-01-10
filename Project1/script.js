@@ -15,7 +15,6 @@ const aboutContent = `
 aboutSection.innerHTML = aboutContent;
 
 // Scroll-Triggered Pop Effect
-
-
+// Hello hellooooooo
 
 
