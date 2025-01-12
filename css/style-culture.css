@@ -1,0 +1,122 @@
+/* Styling the navbar */
+.navbar {
+  display: flex;
+  justify-content: end; /* Center the navigation links */
+  align-items: center; /* Align items vertically */
+  background-color:rgb(1, 28, 1); /* Dark green background */
+  padding: 10px 0;
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Position at the top */
+  width: 100%; /* Full-width header */
+  z-index: 1000; /* Ensure it stays above other elements */
+  margin: 0;
+  list-style: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for effect */
+}
+
+.navbar li {
+  margin: 0 20px; /* Space between menu items */
+}
+
+.navbar a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text */
+  font-size: 18px; /* Font size */
+  font-weight: 500; /* Medium weight */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth scaling and color transition */
+  display: inline-block; /* Necessary for transform to work properly */
+}
+
+.navbar a:hover {
+  transform: scale(1.2); /* Grow to 120% size */
+  color: orange; /* Change color on hover */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(1, 28, 1);
+    color:black;
+}
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color:cornsilk;
+    margin-bottom: 40px;
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background-color:rgb(73, 62, 1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.topic:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.topic-content {
+    width: 50%;
+    padding: 30px;
+}
+
+.topic-title {
+    font-size: 28px;
+    font-weight: bold;
+    color:rgb(244, 252, 251);
+    margin-bottom: 15px;
+}
+
+.topic-description {
+    font-size: 16px;
+    color:white;
+    line-height: 1.8;
+}
+
+.topic img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .topic {
+        flex-direction: column;
+    }
+
+    .topic:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .topic img {
+        width: 100%;
+        height: auto;
+    }
+
+    .topic-content {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}

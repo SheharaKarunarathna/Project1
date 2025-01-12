@@ -1,0 +1,40 @@
+/* Styling the navbar */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  align-items: center; /* Align items vertically */
+  background-color:rgb(1, 28, 1); /* Dark green background */
+  padding: 10px 0;
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Position at the top */
+  width: 100%; /* Full-width header */
+  z-index: 1000; /* Ensure it stays above other elements */
+  margin: 0;
+  list-style: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for effect */
+}
+
+.navbar li {
+  margin: 0 20px; /* Space between menu items */
+}
+
+.navbar a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text */
+  font-size: 18px; /* Font size */
+  font-weight: 500; /* Medium weight */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth scaling and color transition */
+  display: inline-block; /* Necessary for transform to work properly */
+}
+
+.navbar a:hover {
+  transform: scale(1.2); /* Grow to 120% size */
+  color: orange; /* Change color on hover */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(1, 28, 1);
+    color:black;
+}
