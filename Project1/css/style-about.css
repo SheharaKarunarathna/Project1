@@ -48,7 +48,6 @@ body, html {
 
 /* About Us Section */
 .about-us {
-    background: url('your-background-image.jpg') no-repeat center center/cover; /* Replace with your image */
     color: #fff;
     text-align: center;
     padding: 5rem 2rem;
@@ -67,6 +66,7 @@ body, html {
 
 /* Team Section */
 .team {
+    
     background: #f9f9f9;
     padding: 3rem 2rem;
     text-align: center;
@@ -86,10 +86,9 @@ body, html {
 }
 
 .team-member {
-    background-image: linear-gradient(to left, rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(../img/aaaa.jpg.jpg);
     text-align: center;
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(226, 223, 210);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -111,7 +110,7 @@ body, html {
 
 /* Mission Section */
 .mission {
-    background: #fff;
+    background-color: #fff;
     padding: 3rem 2rem;
     text-align: center;
 }
