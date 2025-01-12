@@ -1,7 +1,7 @@
 /* Styling the navbar */
 .navbar {
   display: flex;
-  justify-content: center; /* Center the navigation links */
+  justify-content: end; /* Center the navigation links */
   align-items: center; /* Align items vertically */
   background-color:rgb(1, 28, 1); /* Dark green background */
   padding: 10px 0;

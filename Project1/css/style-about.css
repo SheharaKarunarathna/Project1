@@ -1,8 +1,8 @@
 /*styling the About us navbar*/
 .navbar {
     display: flex;
-    justify-content: center; /* Center the navigation links */
-    align-items: center; /* Align items vertically */
+    justify-content:end; /* Center the navigation links */
+    align-items:center; /* Align items vertically */
     background-color:rgb(1, 28, 1); /* Dark green background */
     padding: 10px 0;
     position: fixed; /* Make the header fixed */
@@ -67,7 +67,7 @@ body, html {
 /* Team Section */
 .team {
     
-    background: #f9f9f9;
+    background: #999999;
     padding: 3rem 2rem;
     text-align: center;
 }
