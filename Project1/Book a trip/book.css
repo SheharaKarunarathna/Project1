@@ -1,5 +1,5 @@
 body{
-    background-image: url(aaaa.jpg.jpg);
+    background-image: url(Places-In-Sri-Lanka_4th-jun.webp);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -22,7 +22,7 @@ body{
     margin-left: 35px;
     width: 610px;
     height: 300px;
-    background: linear-gradient(100deg,#ffa343,rgb(26, 83, 26));
+    background: linear-gradient(100deg,#ffa343,rgb(30, 122, 30));
     margin-top: 0px;
     border-radius: 30px;
     display: inline-table;
@@ -115,7 +115,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg,#ffa343,rgb(26, 83, 26));
+    background: linear-gradient(100deg,#ffa343,rgb(30, 122, 30));
 }
 .container{
     max-width: 650px;
