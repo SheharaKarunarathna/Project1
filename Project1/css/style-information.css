@@ -31,6 +31,10 @@
   transform: scale(1.2); /* Grow to 120% size */
   color: orange; /* Change color on hover */
 }
-body{
-    background:rgb(1, 28, 1) ;
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(1, 28, 1);
+    color:black;
 }
